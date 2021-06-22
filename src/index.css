@@ -27,3 +27,7 @@ margin-top: 20px;
 .action-item:hover{
   cursor:pointer;
 }
+.cart{
+  display: flex;
+  flex-direction: column;
+}
