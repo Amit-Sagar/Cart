@@ -12,9 +12,12 @@ body {
 .cart-item {
  display: inline-flex;
  margin: 20px 10px;
+ padding-left:30%;
+ padding-top: 20px;
+ border: 5px black;
 }
 .cart-item .right-block {
-  padding: 0px 20px;
+  padding: 0px 60px;
 }
 .cart-item-action {
 margin-top: 20px;
