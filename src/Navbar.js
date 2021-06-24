@@ -2,7 +2,7 @@ import { getSuggestedQuery } from '@testing-library/react';
 
 import React from 'react';
 
-const Navbar = () =>{
+const Navbar = (props) =>{
 
         return (
            <div style={styles.nav} >
@@ -18,7 +18,7 @@ const Navbar = () =>{
                </div>
                <div style={styles.cartContainer}>
                    <img style={styles.cartIcon} src="https://image.flaticon.com/icons/png/512/3144/3144456.png" alt="cart-icon"/>
-                   <span style={styles.cartCount} >3</span>
+                   <span style={styles.cartCount} >{props.count}</span>
                </div>
                 
            </div>

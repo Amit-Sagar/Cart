@@ -2,10 +2,9 @@ import { getSuggestedQuery } from '@testing-library/react';
 
 import React from 'react';
 
-class CartItem extends React.Component{
-    render (){
-        console.log('this.props',this.props);
-          const {qty,title,price}= this.props.product;
+const CartItem =(props)=>{
+          const {qty,title,price}= props.product;
+          const {product, onIncreaseQuantity,onDecreaseQuantity,onDeleteProduct}= props;
         return (
            <div className="cart-item">
                 <div className="left-block">
@@ -21,27 +20,26 @@ class CartItem extends React.Component{
                              alt="increase" 
                              className="action-item"
                              src="https://image.flaticon.com/icons/png/128/149/149145.png" 
-                             onClick={() => this.props.onIncreaseQuantity(this.props.product)}
+                             onClick={() => onIncreaseQuantity(product)}
                          />
                         <img 
                              alt="decrease" 
                              className="action-item" 
                              src="https://image.flaticon.com/icons/png/128/814/814039.png"
-                             onClick={() => this.props.onDecreaseQuantity(this.props.product)}
+                             onClick={() => onDecreaseQuantity(product)}
                              
                         />
                         <img 
                              alt="delete" 
                              className="action-item" 
                              src="https://image.flaticon.com/icons/png/128/1214/1214428.png" 
-                             onClick={()=> this.props.onDeleteProduct(this.props.product.id)}
+                             onClick={()=> onDeleteProduct(product.id)}
                         />
                     </div>
                 </div>
            </div>
         );
     }
-}
 
 const styles = {
     image: {
