@@ -9,19 +9,19 @@ class Cart extends React.Component{
          [ {  price: 99,
                title: 'Watch',
                qty: 1,
-               img: '',
+               img: 'https://image.freepik.com/free-vector/smart-watch-realistic-image-black_1284-11873.jpg',
                id: 1
             },
             {  price: 999,
                 title: 'Phone',
                 qty: 1,
-                img: '',
+                img: 'https://image.freepik.com/free-psd/premium-mobile-phone-screen-mockup-template_53876-65749.jpg',
                 id: 2
              },
              {  price: 999,
                 title: 'Laptop',
                 qty: 1,
-                img: '',
+                img: 'https://image.freepik.com/free-psd/laptop-screen-mockup-design-isolated_53876-98834.jpg',
                 id: 3
              }
          ]}
